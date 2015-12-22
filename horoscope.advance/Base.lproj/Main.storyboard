@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="horoscope_advance" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,301 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uq2-HQ-vQd">
+                                <rect key="frame" x="252" y="30" width="96.5" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kpD-2B-JWc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kpD-2B-JWc"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqW-ye-Rkp">
+                                <rect key="frame" x="40" y="528" width="520" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="za8-4p-79R">
+                                        <rect key="frame" x="474" y="1" width="45" height="50"/>
+                                        <state key="normal" title="下一個"/>
+                                        <connections>
+                                            <action selector="nextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLg-st-A6b"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBJ-67-aoq">
+                                        <rect key="frame" x="47" y="1" width="426" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b71-uQ-PRb">
+                                        <rect key="frame" x="1" y="1" width="45" height="50"/>
+                                        <state key="normal" title="上一個"/>
+                                        <connections>
+                                            <action selector="perviousPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tlZ-Az-Qy5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="JBJ-67-aoq" firstAttribute="leading" secondItem="b71-uQ-PRb" secondAttribute="trailing" constant="1" id="18G-Gy-W0z"/>
+                                    <constraint firstItem="JBJ-67-aoq" firstAttribute="top" secondItem="zqW-ye-Rkp" secondAttribute="top" constant="1" id="5hw-AE-uJ8"/>
+                                    <constraint firstItem="za8-4p-79R" firstAttribute="top" secondItem="zqW-ye-Rkp" secondAttribute="top" constant="1" id="645-5G-CJC"/>
+                                    <constraint firstAttribute="bottom" secondItem="JBJ-67-aoq" secondAttribute="bottom" constant="1" id="A9k-om-Fet"/>
+                                    <constraint firstAttribute="bottom" secondItem="za8-4p-79R" secondAttribute="bottom" constant="1" id="ITM-Qp-qCF"/>
+                                    <constraint firstAttribute="height" constant="52" id="XAA-3E-THe"/>
+                                    <constraint firstAttribute="bottom" secondItem="b71-uQ-PRb" secondAttribute="bottom" constant="1" id="Y40-qQ-b96"/>
+                                    <constraint firstItem="za8-4p-79R" firstAttribute="leading" secondItem="JBJ-67-aoq" secondAttribute="trailing" constant="1" id="d3z-Yv-Qu3"/>
+                                    <constraint firstItem="b71-uQ-PRb" firstAttribute="leading" secondItem="zqW-ye-Rkp" secondAttribute="leading" constant="1" id="iSI-t0-Amr"/>
+                                    <constraint firstItem="b71-uQ-PRb" firstAttribute="top" secondItem="zqW-ye-Rkp" secondAttribute="top" constant="1" id="jYV-JI-fTg"/>
+                                    <constraint firstAttribute="trailing" secondItem="za8-4p-79R" secondAttribute="trailing" constant="1" id="sxi-J3-XZi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5G-N9-HU4">
+                                <rect key="frame" x="161" y="130" width="79.5" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s5G-N9-HU4" secondAttribute="height" multiplier="1:1" id="j2N-pa-Igj"/>
+                                </constraints>
+                                <state key="normal" title="水瓶座" image="Aquarius-January-21-February-20"/>
+                                <connections>
+                                    <action selector="aquariusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ZF-sn-NTz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLb-1z-Nm0">
+                                <rect key="frame" x="161" y="229" width="79.5" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cLb-1z-Nm0" secondAttribute="height" multiplier="1:1" id="Tek-Nc-1eV"/>
+                                </constraints>
+                                <state key="normal" title="金牛座 " image="Taurus-April-21-May-22"/>
+                                <connections>
+                                    <action selector="taurusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Rb-fa-KUg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu2-sJ-OK4">
+                                <rect key="frame" x="260.5" y="129.5" width="79.5" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Iu2-sJ-OK4" secondAttribute="height" multiplier="1:1" id="VO2-0X-PBY"/>
+                                </constraints>
+                                <state key="normal" title="牡羊座" image="Aries-March-21-April-21"/>
+                                <connections>
+                                    <action selector="ariesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GbR-7c-MIU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-lW-FOD">
+                                <rect key="frame" x="360" y="129.5" width="79.5" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Kl-lW-FOD" secondAttribute="height" multiplier="1:1" id="qTy-7h-NJA"/>
+                                </constraints>
+                                <state key="normal" title="雙魚座 " image="Pisces-February-20-March-21"/>
+                                <connections>
+                                    <action selector="piscesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8cV-5X-sgX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQ4-0s-ei9">
+                                <rect key="frame" x="360" y="229" width="79.5" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yQ4-0s-ei9" secondAttribute="height" multiplier="1:1" id="CzT-Qh-25f"/>
+                                </constraints>
+                                <state key="normal" title="巨蟹座 " image="Cancer-June-22-July-24"/>
+                                <connections>
+                                    <action selector="cancerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vea-E6-L3g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOY-cC-iBi">
+                                <rect key="frame" x="161" y="429" width="79.5" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EOY-cC-iBi" secondAttribute="height" multiplier="1:1" id="pPg-Ti-5pG"/>
+                                </constraints>
+                                <state key="normal" title="天蝎座" image="Scorpio-October-24-November-23"/>
+                                <connections>
+                                    <action selector="scorpioPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KRF-K1-Xcd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LS-N4-Ami">
+                                <rect key="frame" x="161" y="329" width="79.5" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8LS-N4-Ami" secondAttribute="height" multiplier="1:1" id="zP4-gP-bVi"/>
+                                </constraints>
+                                <state key="normal" title="獅子座" image="Leo-July-24-August-24"/>
+                                <connections>
+                                    <action selector="leoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SwM-8l-0cY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWc-Hg-cEu">
+                                <rect key="frame" x="360" y="329.5" width="79.5" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iWc-Hg-cEu" secondAttribute="height" multiplier="1:1" id="CGZ-jE-CDV"/>
+                                </constraints>
+                                <state key="normal" title="天秤座" image="Libra-September-24-October-24"/>
+                                <connections>
+                                    <action selector="libraPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ek2-iV-yFS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIa-Al-RNa">
+                                <rect key="frame" x="260.5" y="329" width="79.5" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gIa-Al-RNa" secondAttribute="height" multiplier="1:1" id="fJq-Ur-xlG"/>
+                                </constraints>
+                                <state key="normal" title="處女座" image="Virgo-August-24-September-24"/>
+                                <connections>
+                                    <action selector="virgoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQR-yL-SVW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPn-RR-GT7">
+                                <rect key="frame" x="260.5" y="428.5" width="79.5" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cPn-RR-GT7" secondAttribute="height" multiplier="1:1" id="8uQ-1P-FUY"/>
+                                </constraints>
+                                <state key="normal" title="射手座" image="Sagittarius-November-23-December-23"/>
+                                <connections>
+                                    <action selector="sagittariusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vj5-SX-pbx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARu-xs-klF">
+                                <rect key="frame" x="360" y="428.5" width="79.5" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ARu-xs-klF" secondAttribute="height" multiplier="1:1" id="mSI-VG-Vu8"/>
+                                </constraints>
+                                <state key="normal" title="山羊座" image="Capricorn-December-23-January-21"/>
+                                <connections>
+                                    <action selector="capricornPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m5N-EB-K5I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEp-VP-Ngk">
+                                <rect key="frame" x="260.5" y="229" width="79.5" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SEp-VP-Ngk" secondAttribute="height" multiplier="1:1" id="PVm-Tk-F26"/>
+                                </constraints>
+                                <state key="normal" title="雙子座" image="Gemini-May-22-June-22"/>
+                                <connections>
+                                    <action selector="geminiPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VBX-FX-g8Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iu2-sJ-OK4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0jJ-yO-hak"/>
+                            <constraint firstItem="Uq2-HQ-vQd" firstAttribute="height" secondItem="Iu2-sJ-OK4" secondAttribute="height" id="0jy-4D-GP9"/>
+                            <constraint firstItem="ARu-xs-klF" firstAttribute="leading" secondItem="cPn-RR-GT7" secondAttribute="trailing" constant="20" id="5OB-cd-VKi"/>
+                            <constraint firstItem="cPn-RR-GT7" firstAttribute="leading" secondItem="EOY-cC-iBi" secondAttribute="trailing" constant="20" id="5Or-ZS-951"/>
+                            <constraint firstItem="gIa-Al-RNa" firstAttribute="top" secondItem="SEp-VP-Ngk" secondAttribute="bottom" constant="20" id="5cB-tk-wPt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ARu-xs-klF" secondAttribute="trailing" constant="20" id="5dR-p1-MDq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yQ4-0s-ei9" secondAttribute="trailing" constant="20" id="7cK-fY-CdB"/>
+                            <constraint firstItem="zqW-ye-Rkp" firstAttribute="top" secondItem="ARu-xs-klF" secondAttribute="bottom" id="8Tp-Lh-AgL"/>
+                            <constraint firstItem="yQ4-0s-ei9" firstAttribute="centerY" secondItem="SEp-VP-Ngk" secondAttribute="centerY" id="8jP-FG-y4m"/>
+                            <constraint firstItem="zqW-ye-Rkp" firstAttribute="top" secondItem="cPn-RR-GT7" secondAttribute="bottom" constant="20" id="9PP-v3-xzk"/>
+                            <constraint firstItem="ARu-xs-klF" firstAttribute="width" secondItem="cPn-RR-GT7" secondAttribute="width" id="CMd-VN-fwh"/>
+                            <constraint firstItem="cLb-1z-Nm0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="CXe-fi-8Sz"/>
+                            <constraint firstItem="yQ4-0s-ei9" firstAttribute="width" secondItem="SEp-VP-Ngk" secondAttribute="width" id="Cie-Rr-VYE"/>
+                            <constraint firstItem="zqW-ye-Rkp" firstAttribute="top" secondItem="cPn-RR-GT7" secondAttribute="bottom" constant="20" id="EC6-n8-Jom"/>
+                            <constraint firstItem="zqW-ye-Rkp" firstAttribute="top" secondItem="ARu-xs-klF" secondAttribute="bottom" constant="20" id="FXn-EO-tQz"/>
+                            <constraint firstItem="iWc-Hg-cEu" firstAttribute="leading" secondItem="gIa-Al-RNa" secondAttribute="trailing" constant="20" id="Ftw-l1-5dW"/>
+                            <constraint firstItem="SEp-VP-Ngk" firstAttribute="top" secondItem="Iu2-sJ-OK4" secondAttribute="bottom" constant="20" id="Fyk-XS-Wq9"/>
+                            <constraint firstItem="iWc-Hg-cEu" firstAttribute="centerY" secondItem="gIa-Al-RNa" secondAttribute="centerY" id="Grg-5X-2Mb"/>
+                            <constraint firstItem="8LS-N4-Ami" firstAttribute="width" secondItem="gIa-Al-RNa" secondAttribute="width" id="I9H-Ke-m8e"/>
+                            <constraint firstItem="s5G-N9-HU4" firstAttribute="width" secondItem="Iu2-sJ-OK4" secondAttribute="width" id="IH0-hq-p4M"/>
+                            <constraint firstItem="cPn-RR-GT7" firstAttribute="top" secondItem="gIa-Al-RNa" secondAttribute="bottom" constant="20" id="Jb3-4z-BWq"/>
+                            <constraint firstItem="SEp-VP-Ngk" firstAttribute="leading" secondItem="cLb-1z-Nm0" secondAttribute="trailing" constant="20" id="LEh-7v-wcP"/>
+                            <constraint firstItem="EOY-cC-iBi" firstAttribute="centerY" secondItem="cPn-RR-GT7" secondAttribute="centerY" id="LHg-2h-zcL"/>
+                            <constraint firstItem="gIa-Al-RNa" firstAttribute="top" secondItem="SEp-VP-Ngk" secondAttribute="bottom" constant="20" id="Mqb-Eq-SPO"/>
+                            <constraint firstItem="yQ4-0s-ei9" firstAttribute="leading" secondItem="SEp-VP-Ngk" secondAttribute="trailing" constant="20" id="ON1-R4-dfg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Kl-lW-FOD" secondAttribute="trailing" constant="20" id="QOh-hh-1OT"/>
+                            <constraint firstItem="cPn-RR-GT7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QTE-P3-HQw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zqW-ye-Rkp" secondAttribute="bottom" constant="20" id="Thk-ER-sup"/>
+                            <constraint firstItem="0Kl-lW-FOD" firstAttribute="centerY" secondItem="Iu2-sJ-OK4" secondAttribute="centerY" id="Tpi-LP-NCl"/>
+                            <constraint firstItem="zqW-ye-Rkp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="U7p-pJ-dmw"/>
+                            <constraint firstItem="gIa-Al-RNa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uzh-sK-VRR"/>
+                            <constraint firstItem="SEp-VP-Ngk" firstAttribute="top" secondItem="Iu2-sJ-OK4" secondAttribute="bottom" constant="20" id="XQ4-Fw-fFd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Kl-lW-FOD" secondAttribute="trailing" id="ZDT-x9-Xmq"/>
+                            <constraint firstItem="EOY-cC-iBi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="axG-r0-vWQ"/>
+                            <constraint firstItem="Iu2-sJ-OK4" firstAttribute="top" secondItem="Uq2-HQ-vQd" secondAttribute="bottom" constant="20" id="bHD-mK-lY3"/>
+                            <constraint firstItem="Iu2-sJ-OK4" firstAttribute="height" secondItem="SEp-VP-Ngk" secondAttribute="height" id="bX3-IE-msM"/>
+                            <constraint firstItem="zqW-ye-Rkp" firstAttribute="top" secondItem="ARu-xs-klF" secondAttribute="bottom" constant="20" id="bcU-89-xVi"/>
+                            <constraint firstItem="s5G-N9-HU4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="bhN-D2-Bl9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cPn-RR-GT7" secondAttribute="bottom" constant="20" id="bho-lW-gAP"/>
+                            <constraint firstItem="SEp-VP-Ngk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cAb-9J-B8r"/>
+                            <constraint firstItem="cLb-1z-Nm0" firstAttribute="centerY" secondItem="SEp-VP-Ngk" secondAttribute="centerY" id="cig-yS-pot"/>
+                            <constraint firstItem="Iu2-sJ-OK4" firstAttribute="leading" secondItem="s5G-N9-HU4" secondAttribute="trailing" constant="20" id="fCG-MS-fPY"/>
+                            <constraint firstItem="EOY-cC-iBi" firstAttribute="width" secondItem="cPn-RR-GT7" secondAttribute="width" id="fb2-2c-0iD"/>
+                            <constraint firstItem="gIa-Al-RNa" firstAttribute="leading" secondItem="8LS-N4-Ami" secondAttribute="trailing" constant="20" id="g2i-Ro-UId"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iWc-Hg-cEu" secondAttribute="trailing" constant="20" id="hQV-cg-BU2"/>
+                            <constraint firstItem="s5G-N9-HU4" firstAttribute="centerY" secondItem="Iu2-sJ-OK4" secondAttribute="centerY" id="jYr-wa-uR9"/>
+                            <constraint firstItem="8LS-N4-Ami" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="k0c-MT-O45"/>
+                            <constraint firstItem="iWc-Hg-cEu" firstAttribute="width" secondItem="gIa-Al-RNa" secondAttribute="width" id="lVv-vF-hAO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ARu-xs-klF" secondAttribute="trailing" id="pMk-re-OTe"/>
+                            <constraint firstItem="SEp-VP-Ngk" firstAttribute="height" secondItem="gIa-Al-RNa" secondAttribute="height" id="pVJ-5r-2Ql"/>
+                            <constraint firstItem="ARu-xs-klF" firstAttribute="centerY" secondItem="cPn-RR-GT7" secondAttribute="centerY" id="plQ-94-mLU"/>
+                            <constraint firstItem="cPn-RR-GT7" firstAttribute="top" secondItem="gIa-Al-RNa" secondAttribute="bottom" constant="20" id="qkW-NE-sdi"/>
+                            <constraint firstItem="cLb-1z-Nm0" firstAttribute="width" secondItem="SEp-VP-Ngk" secondAttribute="width" id="t4H-be-CtS"/>
+                            <constraint firstItem="8LS-N4-Ami" firstAttribute="centerY" secondItem="gIa-Al-RNa" secondAttribute="centerY" id="tXp-4P-Hi2"/>
+                            <constraint firstItem="Iu2-sJ-OK4" firstAttribute="top" secondItem="Uq2-HQ-vQd" secondAttribute="bottom" constant="20" id="tZw-pN-7nK"/>
+                            <constraint firstItem="0Kl-lW-FOD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ttO-SB-10t"/>
+                            <constraint firstItem="Uq2-HQ-vQd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="uIV-Rs-L3w"/>
+                            <constraint firstItem="0Kl-lW-FOD" firstAttribute="leading" secondItem="Iu2-sJ-OK4" secondAttribute="trailing" constant="20" id="vA8-bH-6D8"/>
+                            <constraint firstItem="Uq2-HQ-vQd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vvW-3o-o6k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zqW-ye-Rkp" secondAttribute="trailing" constant="20" id="wCp-sC-NB3"/>
+                            <constraint firstItem="gIa-Al-RNa" firstAttribute="height" secondItem="cPn-RR-GT7" secondAttribute="height" id="xKE-s2-HjG"/>
+                            <constraint firstItem="0Kl-lW-FOD" firstAttribute="width" secondItem="Iu2-sJ-OK4" secondAttribute="width" id="xdS-NU-6hF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bhN-D2-Bl9"/>
+                                <exclude reference="CXe-fi-8Sz"/>
+                                <exclude reference="tZw-pN-7nK"/>
+                                <exclude reference="k0c-MT-O45"/>
+                                <exclude reference="QOh-hh-1OT"/>
+                                <exclude reference="ZDT-x9-Xmq"/>
+                                <exclude reference="ttO-SB-10t"/>
+                                <exclude reference="7cK-fY-CdB"/>
+                                <exclude reference="axG-r0-vWQ"/>
+                                <exclude reference="hQV-cg-BU2"/>
+                                <exclude reference="8Tp-Lh-AgL"/>
+                                <exclude reference="EC6-n8-Jom"/>
+                                <exclude reference="FXn-EO-tQz"/>
+                                <exclude reference="bcU-89-xVi"/>
+                                <exclude reference="5dR-p1-MDq"/>
+                                <exclude reference="pMk-re-OTe"/>
+                                <exclude reference="bho-lW-gAP"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="aquarius" destination="s5G-N9-HU4" id="Lzn-qN-RPa"/>
+                        <outlet property="aries" destination="Iu2-sJ-OK4" id="5cV-uf-UwD"/>
+                        <outlet property="cancer" destination="yQ4-0s-ei9" id="tuW-w6-t0l"/>
+                        <outlet property="capricorn" destination="ARu-xs-klF" id="sKh-V4-tPE"/>
+                        <outlet property="gemini" destination="SEp-VP-Ngk" id="7uf-dR-a7g"/>
+                        <outlet property="horoscopeLabel" destination="Uq2-HQ-vQd" id="YrM-rh-S5P"/>
+                        <outlet property="leo" destination="8LS-N4-Ami" id="EjC-Bh-SIy"/>
+                        <outlet property="libra" destination="iWc-Hg-cEu" id="J3q-Ry-ih8"/>
+                        <outlet property="next" destination="za8-4p-79R" id="Jyz-7i-2UM"/>
+                        <outlet property="perivous" destination="b71-uQ-PRb" id="KQc-5V-DXw"/>
+                        <outlet property="pisces" destination="0Kl-lW-FOD" id="B41-5D-8zM"/>
+                        <outlet property="sagittarius" destination="cPn-RR-GT7" id="IP5-by-h48"/>
+                        <outlet property="scorpio" destination="EOY-cC-iBi" id="WG7-ZT-ivR"/>
+                        <outlet property="taurus" destination="cLb-1z-Nm0" id="J7K-ix-L7T"/>
+                        <outlet property="virgo" destination="gIa-Al-RNa" id="nNj-a3-M3u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-31" y="485"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Aquarius-January-21-February-20" width="1000" height="1000"/>
+        <image name="Aries-March-21-April-21" width="1000" height="1000"/>
+        <image name="Cancer-June-22-July-24" width="1000" height="1000"/>
+        <image name="Capricorn-December-23-January-21" width="1000" height="1000"/>
+        <image name="Gemini-May-22-June-22" width="1000" height="1000"/>
+        <image name="Leo-July-24-August-24" width="1000" height="1000"/>
+        <image name="Libra-September-24-October-24" width="1000" height="1000"/>
+        <image name="Pisces-February-20-March-21" width="1000" height="1000"/>
+        <image name="Sagittarius-November-23-December-23" width="1000" height="1000"/>
+        <image name="Scorpio-October-24-November-23" width="1000" height="1000"/>
+        <image name="Taurus-April-21-May-22" width="1000" height="1000"/>
+        <image name="Virgo-August-24-September-24" width="1000" height="1000"/>
+    </resources>
 </document>
