@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94D363EE1C295D3E00C80B65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D363ED1C295D3E00C80B65 /* AppDelegate.swift */; };
+		94D363F01C295D3E00C80B65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D363EF1C295D3E00C80B65 /* ViewController.swift */; };
+		94D363F31C295D3E00C80B65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D363F11C295D3E00C80B65 /* Main.storyboard */; };
+		94D363F51C295D3E00C80B65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D363F41C295D3E00C80B65 /* Assets.xcassets */; };
+		94D363F81C295D3E00C80B65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D363F61C295D3E00C80B65 /* LaunchScreen.storyboard */; };
+		94D364031C295D3E00C80B65 /* horoscope_advanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D364021C295D3E00C80B65 /* horoscope_advanceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94D363FF1C295D3E00C80B65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94D363E21C295D3E00C80B65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94D363E91C295D3E00C80B65;
+			remoteInfo = horoscope.advance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94D363EA1C295D3E00C80B65 /* horoscope.advance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = horoscope.advance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D363ED1C295D3E00C80B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94D363EF1C295D3E00C80B65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94D363F21C295D3E00C80B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94D363F41C295D3E00C80B65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94D363F71C295D3E00C80B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94D363F91C295D3E00C80B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D363FE1C295D3E00C80B65 /* horoscope.advanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = horoscope.advanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D364021C295D3E00C80B65 /* horoscope_advanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = horoscope_advanceTests.swift; sourceTree = "<group>"; };
+		94D364041C295D3E00C80B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94D363E71C295D3E00C80B65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D363FB1C295D3E00C80B65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94D363E11C295D3E00C80B65 = {
+			isa = PBXGroup;
+			children = (
+				94D363EC1C295D3E00C80B65 /* horoscope.advance */,
+				94D364011C295D3E00C80B65 /* horoscope.advanceTests */,
+				94D363EB1C295D3E00C80B65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94D363EB1C295D3E00C80B65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94D363EA1C295D3E00C80B65 /* horoscope.advance.app */,
+				94D363FE1C295D3E00C80B65 /* horoscope.advanceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94D363EC1C295D3E00C80B65 /* horoscope.advance */ = {
+			isa = PBXGroup;
+			children = (
+				94D363ED1C295D3E00C80B65 /* AppDelegate.swift */,
+				94D363EF1C295D3E00C80B65 /* ViewController.swift */,
+				94D363F11C295D3E00C80B65 /* Main.storyboard */,
+				94D363F41C295D3E00C80B65 /* Assets.xcassets */,
+				94D363F61C295D3E00C80B65 /* LaunchScreen.storyboard */,
+				94D363F91C295D3E00C80B65 /* Info.plist */,
+			);
+			path = horoscope.advance;
+			sourceTree = "<group>";
+		};
+		94D364011C295D3E00C80B65 /* horoscope.advanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				94D364021C295D3E00C80B65 /* horoscope_advanceTests.swift */,
+				94D364041C295D3E00C80B65 /* Info.plist */,
+			);
+			path = horoscope.advanceTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94D363E91C295D3E00C80B65 /* horoscope.advance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D364071C295D3E00C80B65 /* Build configuration list for PBXNativeTarget "horoscope.advance" */;
+			buildPhases = (
+				94D363E61C295D3E00C80B65 /* Sources */,
+				94D363E71C295D3E00C80B65 /* Frameworks */,
+				94D363E81C295D3E00C80B65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = horoscope.advance;
+			productName = horoscope.advance;
+			productReference = 94D363EA1C295D3E00C80B65 /* horoscope.advance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94D363FD1C295D3E00C80B65 /* horoscope.advanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D3640A1C295D3E00C80B65 /* Build configuration list for PBXNativeTarget "horoscope.advanceTests" */;
+			buildPhases = (
+				94D363FA1C295D3E00C80B65 /* Sources */,
+				94D363FB1C295D3E00C80B65 /* Frameworks */,
+				94D363FC1C295D3E00C80B65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94D364001C295D3E00C80B65 /* PBXTargetDependency */,
+			);
+			name = horoscope.advanceTests;
+			productName = horoscope.advanceTests;
+			productReference = 94D363FE1C295D3E00C80B65 /* horoscope.advanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94D363E21C295D3E00C80B65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Ryan;
+				TargetAttributes = {
+					94D363E91C295D3E00C80B65 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					94D363FD1C295D3E00C80B65 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 94D363E91C295D3E00C80B65;
+					};
+				};
+			};
+			buildConfigurationList = 94D363E51C295D3E00C80B65 /* Build configuration list for PBXProject "horoscope.advance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94D363E11C295D3E00C80B65;
+			productRefGroup = 94D363EB1C295D3E00C80B65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94D363E91C295D3E00C80B65 /* horoscope.advance */,
+				94D363FD1C295D3E00C80B65 /* horoscope.advanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94D363E81C295D3E00C80B65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D363F81C295D3E00C80B65 /* LaunchScreen.storyboard in Resources */,
+				94D363F51C295D3E00C80B65 /* Assets.xcassets in Resources */,
+				94D363F31C295D3E00C80B65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D363FC1C295D3E00C80B65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94D363E61C295D3E00C80B65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D363F01C295D3E00C80B65 /* ViewController.swift in Sources */,
+				94D363EE1C295D3E00C80B65 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D363FA1C295D3E00C80B65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D364031C295D3E00C80B65 /* horoscope_advanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94D364001C295D3E00C80B65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94D363E91C295D3E00C80B65 /* horoscope.advance */;
+			targetProxy = 94D363FF1C295D3E00C80B65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94D363F11C295D3E00C80B65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D363F21C295D3E00C80B65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94D363F61C295D3E00C80B65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D363F71C295D3E00C80B65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94D364051C295D3E00C80B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94D364061C295D3E00C80B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94D364081C295D3E00C80B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = horoscope.advance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanchengwy.horoscope-advance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		94D364091C295D3E00C80B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = horoscope.advance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanchengwy.horoscope-advance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		94D3640B1C295D3E00C80B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = horoscope.advanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanchengwy.horoscope-advanceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/horoscope.advance.app/horoscope.advance";
+			};
+			name = Debug;
+		};
+		94D3640C1C295D3E00C80B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = horoscope.advanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanchengwy.horoscope-advanceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/horoscope.advance.app/horoscope.advance";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94D363E51C295D3E00C80B65 /* Build configuration list for PBXProject "horoscope.advance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D364051C295D3E00C80B65 /* Debug */,
+				94D364061C295D3E00C80B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94D364071C295D3E00C80B65 /* Build configuration list for PBXNativeTarget "horoscope.advance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D364081C295D3E00C80B65 /* Debug */,
+				94D364091C295D3E00C80B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94D3640A1C295D3E00C80B65 /* Build configuration list for PBXNativeTarget "horoscope.advanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D3640B1C295D3E00C80B65 /* Debug */,
+				94D3640C1C295D3E00C80B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94D363E21C295D3E00C80B65 /* Project object */;
+}
